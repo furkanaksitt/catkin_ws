@@ -1,0 +1,8 @@
+prefix=/home/eng401/catkin_ws/install
+
+Name: spherical_move
+Description: Description of spherical_move
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

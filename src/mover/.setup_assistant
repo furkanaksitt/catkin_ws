@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: my_spherical_manipulator
+    relative_path: urdf/spherical_manipulator.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/spherical_manipulator.srdf
+  CONFIG:
+    author_name: furkan
+    author_email: furkan.aksit66@gmail.com
+    generated_timestamp: 1732870555

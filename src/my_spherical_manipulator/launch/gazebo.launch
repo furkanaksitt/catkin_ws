@@ -1,0 +1,20 @@
+<launch>
+  <!-- Load the spherical manipulator URDF model into the parameter server -->
+  <param name="robot_description" textfile="$(find my_spherical_manipulator)/urdf/spherical_manipulator.urdf" />
+
+  <!-- Start Gazebo with an empty world -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch"/>
+
+  <!-- Load controller parameters -->
+  <rosparam file="$(find my_spherical_manipulator)/config/controller.yaml" command="load" />
+
+  <!-- Spawn the robot in Gazebo -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model spherical_manipulator" />
+
+  <!-- Spawn controllers -->
+  <node name="controller_spawner" pkg="controller_manager" type="spawner"
+        args="base_Revolute_1_controller large_Revolute_2_controller medium_Revolute_3_controller" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+</launch>

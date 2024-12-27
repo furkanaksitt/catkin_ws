@@ -1,0 +1,9 @@
+controller_list:
+  - name: spherical_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints:
+      - base_Revolute_1
+      - large_Revolute_2
+      - medium_Revolute_3

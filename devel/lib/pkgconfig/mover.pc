@@ -1,0 +1,8 @@
+prefix=/home/eng401/catkin_ws/devel
+
+Name: mover
+Description: Description of mover
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,38 @@
+<launch>
+    <!-- Robot Description -->
+    <arg name="robot_description" command="cat $(find my_spherical_manipulator)/urdf/spherical_manipulator.urdf" />
+    <param name="robot_description" value="$(arg robot_description)" />
+
+    <!-- MoveIt! Configurations -->
+    <arg name="moveit_config" default="$(find my_spherical_manipulator)/config/moveit_config.launch" />
+
+    <!-- Launch the MoveIt! planning execution pipeline -->
+    <include file="$(find moveit_ros_move_group)/launch/move_group.launch">
+        <arg name="robot_description" value="$(arg robot_description)" />
+    </include>
+
+    <!-- Optional RViz Visualization -->
+    <include file="$(find moveit_ros_visualization)/launch/moveit_rviz.launch">
+        <arg name="robot_description" value="$(arg robot_description)" />
+        <arg name="config" value="$(arg moveit_config)" />
+    </include>
+        <!-- Launch Gazebo with an empty world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="use_sim_time" value="true" />
+    </include>
+
+    <!-- Load Controllers from YAML -->
+    <rosparam file="$(find my_spherical_manipulator)/config/controller.yaml" command="load" />
+
+    <!-- Load the URDF -->
+    <param name="robot_description" command="cat $(find my_spherical_manipulator)/urdf/spherical_manipulator.urdf" />
+
+    <!-- Spawn the robot in Gazebo -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" output="screen" args="-urdf -param robot_description -model spherical_manipulator" />
+
+    <!-- Spawn Controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" output="screen"
+          args="joint_state_controller base_Revolute_1_position_controller large_Revolute_2_position_controller medium_Revolute_3_position_controller" />
+
+</launch>
+
