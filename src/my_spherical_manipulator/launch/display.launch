@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <launch>
 
   <arg name="model" default="$(find my_spherical_manipulator)/urdf/spherical_manipulator.urdf"/>

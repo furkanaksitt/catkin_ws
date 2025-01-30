@@ -12,10 +12,17 @@
   <!-- Launch Gazebo and spawn the robot -->
   <include file="$(dirname)/gazebo.launch" pass_all_args="true"/>
 
+  <!-- Launch Joint State Publisher -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" output="screen">
+    <param name="use_gui" value="false" />
+  </node>
+
   <!-- Launch MoveIt -->
   <include file="$(dirname)/demo.launch" pass_all_args="true">
     <!-- robot_description is loaded by gazebo.launch, to enable Gazebo features -->
     <arg name="load_robot_description" value="false" />
     <arg name="moveit_controller_manager" value="ros_control" />
   </include>
+
 </launch>
+
