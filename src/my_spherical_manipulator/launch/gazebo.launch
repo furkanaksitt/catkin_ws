@@ -13,8 +13,9 @@
         args="-param robot_description -urdf -model spherical_manipulator" />
 
   <!-- Spawn controllers -->
-  <node name="controller_spawner" pkg="controller_manager" type="spawner"
-        args="base_Revolute_1_controller large_Revolute_2_controller medium_Revolute_3_controller" />
+  <node name="controller_manager" pkg="controller_manager" type="spawner"
+      args="joint_state_controller" />
+
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
 </launch>

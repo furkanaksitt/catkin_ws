@@ -1,8 +1,8 @@
-# Install script for directory: /home/eng401/catkin_ws/src/mover
+# Install script for directory: /home/ros-linux/ros-projects/catkin_ws/src/mover
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/eng401/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ros-linux/ros-projects/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/eng401/catkin_ws/build/mover/catkin_generated/installspace/mover.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/build/mover/catkin_generated/installspace/mover.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover/cmake" TYPE FILE FILES
-    "/home/eng401/catkin_ws/build/mover/catkin_generated/installspace/moverConfig.cmake"
-    "/home/eng401/catkin_ws/build/mover/catkin_generated/installspace/moverConfig-version.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/mover/catkin_generated/installspace/moverConfig.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/mover/catkin_generated/installspace/moverConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover" TYPE FILE FILES "/home/eng401/catkin_ws/src/mover/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/src/mover/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover" TYPE DIRECTORY FILES "/home/eng401/catkin_ws/src/mover/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/mover/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover" TYPE DIRECTORY FILES "/home/eng401/catkin_ws/src/mover/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mover" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/mover/config")
 endif()
 

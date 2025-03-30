@@ -1,3 +1,20 @@
+gazebo_ros_control:
+  pid_gains:
+    base_Revolute_1:
+      p: 10
+      d: 1
+      i: 1
+    
+    large_Revolute_2:
+      p: 10
+      d: 1
+      i: 1
+    
+    medium_Revolute_3:
+      p: 10
+      d: 1
+      i: 1
+      
 # Publish joint_states
 joint_state_controller:
   type: joint_state_controller/JointStateController

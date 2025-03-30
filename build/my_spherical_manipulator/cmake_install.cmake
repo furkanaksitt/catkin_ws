@@ -1,8 +1,8 @@
-# Install script for directory: /home/eng401/catkin_ws/src/my_spherical_manipulator
+# Install script for directory: /home/ros-linux/ros-projects/catkin_ws/src/my_spherical_manipulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/eng401/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ros-linux/ros-projects/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,32 +38,32 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/eng401/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulator.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulator.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_spherical_manipulator/cmake" TYPE FILE FILES
-    "/home/eng401/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig.cmake"
-    "/home/eng401/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig-version.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_spherical_manipulator" TYPE FILE FILES "/home/eng401/catkin_ws/src/my_spherical_manipulator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_spherical_manipulator" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/src/my_spherical_manipulator/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/eng401/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulator.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulator.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_spherical_manipulator/cmake" TYPE FILE FILES
-    "/home/eng401/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig.cmake"
-    "/home/eng401/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig-version.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/catkin_generated/installspace/my_spherical_manipulatorConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_spherical_manipulator" TYPE FILE FILES "/home/eng401/catkin_ws/src/my_spherical_manipulator/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_spherical_manipulator" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/src/my_spherical_manipulator/package.xml")
 endif()
 

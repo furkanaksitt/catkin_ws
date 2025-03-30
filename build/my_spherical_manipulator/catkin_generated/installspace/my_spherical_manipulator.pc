@@ -1,4 +1,4 @@
-prefix=/home/eng401/catkin_ws/install
+prefix=/home/ros-linux/ros-projects/catkin_ws/install
 
 Name: my_spherical_manipulator
 Description: Description of my_spherical_manipulator

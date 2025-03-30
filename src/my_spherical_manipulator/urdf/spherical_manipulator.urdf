@@ -1,26 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <robot name="spherical_manipulator">
 
-    <!-- Base Link -->
-    <link name="base">
-        <inertial>
-            <origin xyz="-0.015 0.015 0.00273" rpy="0.0 0.0 0.0" />
-            <mass value="50.036157" />
-            <inertia ixx="2.82e-03" iyy="2.82e-03" izz="5.3e-03" ixy="0.0" iyz="0.0" ixz="0.0" />
-        </inertial>
-        <visual>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://my_spherical_manipulator/meshes/base.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </visual>
-        <collision>
-            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
-            <geometry>
-                <mesh filename="package://my_spherical_manipulator/meshes/base.stl" scale="0.001 0.001 0.001" />
-            </geometry>
-        </collision>
-    </link>
+<!-- Base Link -->
+<link name="base">
+    <visual>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <geometry>
+            <mesh filename="package://my_spherical_manipulator/meshes/base.stl" scale="0.001 0.001 0.001" />
+        </geometry>
+    </visual>
+    <collision>
+        <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        <geometry>
+            <mesh filename="package://my_spherical_manipulator/meshes/base.stl" scale="0.001 0.001 0.001" />
+        </geometry>
+    </collision>
+</link>
+
+<!-- Dummy Link for Inertia -->
+<link name="dummy_base">
+    <inertial>
+        <origin xyz="-0.015 0.015 0.00273" rpy="0.0 0.0 0.0" />
+        <mass value="150.036157" />
+        <inertia ixx="2.82e-03" iyy="2.82e-03" izz="5.3e-03" ixy="0.0" iyz="0.0" ixz="0.0" />
+    </inertial>
+</link>
 
     <!-- Small Link -->
     <link name="small">
@@ -86,13 +90,21 @@
     </link>
 
     <!-- Joints -->
+    
+    <joint name="base_to_dummy" type="fixed">
+        <parent link="base"/>
+        <child link="dummy_base"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+    
     <joint name="base_Revolute_1" type="continuous">
         <origin xyz="-0.015 0.015 0.02" rpy="0.0 0.0 0.0" />
         <parent link="base" />
         <child link="large" />
         <axis xyz="0.0 0.0 1.0" />
-        <limit effort="300" velocity="1.0" />
-        <dynamics damping="0.1" friction="0.1" />
+        <limit effort="100.0" velocity="1.0" lower="-1.57" upper="1.57"/>
+
+        <!--dynamics damping="0.1" friction="0.1" /-->
     </joint>
 
     <joint name="large_Revolute_2" type="continuous">
@@ -100,8 +112,9 @@
         <parent link="large" />
         <child link="medium" />
         <axis xyz="-0.148 -0.5 -0.853" />
-        <limit effort="300" velocity="1.0" />
-        <dynamics damping="0.1" friction="0.1" />
+        <limit effort="100.0" velocity="1.0" lower="-1.57" upper="1.57"/>
+
+        <!--dynamics damping="0.1" friction="0.1" /-->
     </joint>
 
     <joint name="medium_Revolute_3" type="continuous">
@@ -109,8 +122,9 @@
         <parent link="medium" />
         <child link="small" />
         <axis xyz="-0.506 0.173 -0.845" />
-        <limit effort="300" velocity="1.0" />
-        <dynamics damping="0.1" friction="0.1" />
+        <limit effort="100.0" velocity="1.0" lower="-1.57" upper="1.57"/>
+
+        <!--dynamics damping="0.1" friction="0.1" /-->
     </joint>
 
 
@@ -154,7 +168,9 @@
     <plugin name="joint_state_publisher"
         filename="libgazebo_ros_joint_state_publisher.so">
         <jointName>base_Revolute_1, large_Revolute_2, medium_Revolute_3</jointName>
+        <updateRate>50</updateRate>
     </plugin>
+
     </gazebo>
 
 

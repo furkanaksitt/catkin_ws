@@ -1,4 +1,4 @@
-prefix=/home/eng401/catkin_ws/devel
+prefix=/home/ros-linux/ros-projects/catkin_ws/devel
 
 Name: mover
 Description: Description of mover

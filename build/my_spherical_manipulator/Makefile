@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eng401/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ros-linux/ros-projects/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eng401/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ros-linux/ros-projects/catkin_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/eng401/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/eng401/catkin_ws/build/CMakeFiles /home/eng401/catkin_ws/build/my_spherical_manipulator/CMakeFiles/progress.marks
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/eng401/catkin_ws/build/CMakeFiles 0
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ros-linux/ros-projects/catkin_ws/build/CMakeFiles /home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/CMakeFiles/progress.marks
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros-linux/ros-projects/catkin_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/clean
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/preinstall
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/preinstall
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/eng401/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ control_toolbox_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/cont
 
 # fast build rule for target.
 control_toolbox_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_lisp.dir/build
 .PHONY : control_toolbox_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ control_toolbox_generate_messages_eus: my_spherical_manipulator/CMakeFiles/contr
 
 # fast build rule for target.
 control_toolbox_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_eus.dir/build
 .PHONY : control_toolbox_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ control_toolbox_gencfg: my_spherical_manipulator/CMakeFiles/control_toolbox_genc
 
 # fast build rule for target.
 control_toolbox_gencfg/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_gencfg.dir/build
 .PHONY : control_toolbox_gencfg/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ control_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/control_m
 
 # fast build rule for target.
 control_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_py.dir/build
 .PHONY : control_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ control_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/control_
 
 # fast build rule for target.
 control_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_cpp.dir/build
 .PHONY : control_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ controller_manager_msgs_generate_messages_nodejs: my_spherical_manipulator/CMake
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
 .PHONY : controller_manager_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ controller_manager_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFil
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
 .PHONY : controller_manager_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ controller_manager_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFil
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/build
 .PHONY : controller_manager_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ trajectory_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/tr
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_nodejs.dir/build
 .PHONY : trajectory_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ trajectory_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/traj
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/build
 .PHONY : trajectory_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ control_toolbox_generate_messages_py: my_spherical_manipulator/CMakeFiles/contro
 
 # fast build rule for target.
 control_toolbox_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_py.dir/build
 .PHONY : control_toolbox_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ trajectory_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/traje
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/build
 .PHONY : trajectory_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ gazebo_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/gazebo_msg
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_py.dir/build
 .PHONY : gazebo_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ gazebo_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/gazebo
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_nodejs.dir/build
 .PHONY : gazebo_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ std_srvs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/std_srvs_
 
 # fast build rule for target.
 std_srvs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
 .PHONY : std_srvs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ std_srvs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/std_srvs_ge
 
 # fast build rule for target.
 std_srvs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 .PHONY : std_srvs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ std_srvs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/std_srvs_gen
 
 # fast build rule for target.
 std_srvs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_eus.dir/build
 .PHONY : std_srvs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ geometry_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/geometr
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ std_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/std_msgs_
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ std_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/std_msgs_gene
 
 # fast build rule for target.
 std_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ std_srvs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/std_srvs_gen
 
 # fast build rule for target.
 std_srvs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_cpp.dir/build
 .PHONY : std_srvs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ std_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/std_msgs_gen
 
 # fast build rule for target.
 std_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 .PHONY : std_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ dynamic_reconfigure_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_lisp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ tf2_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/tf2_msgs_gen
 
 # fast build rule for target.
 tf2_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/build
 .PHONY : tf2_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ geometry_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/geometry
 
 # fast build rule for target.
 geometry_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
 .PHONY : geometry_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ gazebo_ros_gencfg: my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/rul
 
 # fast build rule for target.
 gazebo_ros_gencfg/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_ros_gencfg.dir/build
 .PHONY : gazebo_ros_gencfg/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ roscpp_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/roscpp_generat
 
 # fast build rule for target.
 roscpp_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 .PHONY : roscpp_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ roscpp_generate_messages_eus: my_spherical_manipulator/CMakeFiles/roscpp_generat
 
 # fast build rule for target.
 roscpp_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_eus.dir/build
 .PHONY : roscpp_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ my_spherical_manipulator_xacro_generated_to_devel_space_: my_spherical_manipulat
 
 # fast build rule for target.
 my_spherical_manipulator_xacro_generated_to_devel_space_/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/build.make my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/build.make my_spherical_manipulator/CMakeFiles/my_spherical_manipulator_xacro_generated_to_devel_space_.dir/build
 .PHONY : my_spherical_manipulator_xacro_generated_to_devel_space_/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -614,12 +614,12 @@ sensor_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/sensor_msg
 
 # fast build rule for target.
 sensor_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_py.dir/build
 .PHONY : sensor_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -629,12 +629,12 @@ tf2_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/tf2_msgs_gen
 
 # fast build rule for target.
 tf2_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_eus.dir/build
 .PHONY : tf2_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -644,12 +644,12 @@ rosgraph_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/rosg
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -659,12 +659,12 @@ actionlib_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/actionlib_g
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -674,12 +674,12 @@ actionlib_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/actionl
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -689,12 +689,12 @@ std_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/std_msgs_ge
 
 # fast build rule for target.
 std_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -704,12 +704,12 @@ control_toolbox_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/contr
 
 # fast build rule for target.
 control_toolbox_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_cpp.dir/build
 .PHONY : control_toolbox_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -719,12 +719,12 @@ trajectory_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/traje
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_eus.dir/build
 .PHONY : trajectory_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -734,12 +734,12 @@ roscpp_generate_messages_py: my_spherical_manipulator/CMakeFiles/roscpp_generate
 
 # fast build rule for target.
 roscpp_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_py.dir/build
 .PHONY : roscpp_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -749,12 +749,12 @@ geometry_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/geomet
 
 # fast build rule for target.
 geometry_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 .PHONY : geometry_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -764,12 +764,12 @@ control_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/control_
 
 # fast build rule for target.
 control_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_eus.dir/build
 .PHONY : control_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -779,12 +779,12 @@ tf_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/tf_generate_messag
 
 # fast build rule for target.
 tf_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_cpp.dir/build
 .PHONY : tf_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -794,12 +794,12 @@ roscpp_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/roscpp_gene
 
 # fast build rule for target.
 roscpp_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 .PHONY : roscpp_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -809,12 +809,12 @@ std_srvs_generate_messages_py: my_spherical_manipulator/CMakeFiles/std_srvs_gene
 
 # fast build rule for target.
 std_srvs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/std_srvs_generate_messages_py.dir/build
 .PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -824,12 +824,12 @@ rosgraph_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/rosgrap
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 .PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -839,12 +839,12 @@ tf_generate_messages_eus: my_spherical_manipulator/CMakeFiles/tf_generate_messag
 
 # fast build rule for target.
 tf_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_eus.dir/build
 .PHONY : tf_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -854,12 +854,12 @@ rosgraph_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/rosgra
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -869,12 +869,12 @@ control_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/contr
 
 # fast build rule for target.
 control_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_nodejs.dir/build
 .PHONY : control_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -884,12 +884,12 @@ dynamic_reconfigure_generate_messages_py: my_spherical_manipulator/CMakeFiles/dy
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_py.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -899,12 +899,12 @@ actionlib_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/action
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -914,12 +914,12 @@ geometry_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/geometr
 
 # fast build rule for target.
 geometry_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 .PHONY : geometry_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -929,12 +929,12 @@ control_toolbox_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/co
 
 # fast build rule for target.
 control_toolbox_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/control_toolbox_generate_messages_nodejs.dir/build
 .PHONY : control_toolbox_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -944,12 +944,12 @@ controller_manager_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFi
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
 .PHONY : controller_manager_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -959,12 +959,12 @@ roscpp_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/roscpp_genera
 
 # fast build rule for target.
 roscpp_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 .PHONY : roscpp_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -974,12 +974,12 @@ actionlib_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/actionlib_
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -989,12 +989,12 @@ rosgraph_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/rosgraph
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 .PHONY : rosgraph_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1004,12 +1004,12 @@ tf_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/tf_generate_messa
 
 # fast build rule for target.
 tf_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_lisp.dir/build
 .PHONY : tf_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1019,12 +1019,12 @@ dynamic_reconfigure_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/d
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_cpp.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1034,12 +1034,12 @@ tf_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/tf_generate_mes
 
 # fast build rule for target.
 tf_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_nodejs.dir/build
 .PHONY : tf_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1049,12 +1049,12 @@ gazebo_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/gazebo_ms
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_cpp.dir/build
 .PHONY : gazebo_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1064,12 +1064,12 @@ sensor_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/sensor_ms
 
 # fast build rule for target.
 sensor_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/build
 .PHONY : sensor_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1079,12 +1079,12 @@ gazebo_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/gazebo_m
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_lisp.dir/build
 .PHONY : gazebo_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1094,12 +1094,12 @@ tf2_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/tf2_msgs_gene
 
 # fast build rule for target.
 tf2_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_py.dir/build
 .PHONY : tf2_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1109,12 +1109,12 @@ dynamic_reconfigure_generate_messages_nodejs: my_spherical_manipulator/CMakeFile
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_nodejs.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1124,12 +1124,12 @@ control_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/control
 
 # fast build rule for target.
 control_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/control_msgs_generate_messages_lisp.dir/build
 .PHONY : control_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1139,12 +1139,12 @@ sensor_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/sensor_ms
 
 # fast build rule for target.
 sensor_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1154,12 +1154,12 @@ sensor_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/sensor_m
 
 # fast build rule for target.
 sensor_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/build
 .PHONY : sensor_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1169,12 +1169,12 @@ sensor_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/sensor
 
 # fast build rule for target.
 sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
 .PHONY : sensor_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1184,12 +1184,12 @@ trajectory_msgs_generate_messages_py: my_spherical_manipulator/CMakeFiles/trajec
 
 # fast build rule for target.
 trajectory_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/trajectory_msgs_generate_messages_py.dir/build
 .PHONY : trajectory_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1199,12 +1199,12 @@ rosgraph_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/rosgrap
 
 # fast build rule for target.
 rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 .PHONY : rosgraph_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1214,12 +1214,12 @@ actionlib_generate_messages_eus: my_spherical_manipulator/CMakeFiles/actionlib_g
 
 # fast build rule for target.
 actionlib_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1229,12 +1229,12 @@ controller_manager_msgs_generate_messages_py: my_spherical_manipulator/CMakeFile
 
 # fast build rule for target.
 controller_manager_msgs_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/build
 .PHONY : controller_manager_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -1244,12 +1244,12 @@ actionlib_msgs_generate_messages_cpp: my_spherical_manipulator/CMakeFiles/action
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1259,12 +1259,12 @@ actionlib_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/actionli
 
 # fast build rule for target.
 actionlib_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1274,12 +1274,12 @@ actionlib_generate_messages_py: my_spherical_manipulator/CMakeFiles/actionlib_ge
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -1289,12 +1289,12 @@ tf_generate_messages_py: my_spherical_manipulator/CMakeFiles/tf_generate_message
 
 # fast build rule for target.
 tf_generate_messages_py/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/build.make my_spherical_manipulator/CMakeFiles/tf_generate_messages_py.dir/build
 .PHONY : tf_generate_messages_py/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1304,12 +1304,12 @@ std_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/std_msgs_gen
 
 # fast build rule for target.
 std_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 .PHONY : std_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1319,12 +1319,12 @@ actionlib_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/act
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1334,12 +1334,12 @@ actionlib_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/actio
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -1349,12 +1349,12 @@ tf2_msgs_generate_messages_lisp: my_spherical_manipulator/CMakeFiles/tf2_msgs_ge
 
 # fast build rule for target.
 tf2_msgs_generate_messages_lisp/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 .PHONY : tf2_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1364,12 +1364,12 @@ tf2_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/tf2_msgs_
 
 # fast build rule for target.
 tf2_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/tf2_msgs_generate_messages_nodejs.dir/build
 .PHONY : tf2_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1379,12 +1379,12 @@ gazebo_msgs_generate_messages_eus: my_spherical_manipulator/CMakeFiles/gazebo_ms
 
 # fast build rule for target.
 gazebo_msgs_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/gazebo_msgs_generate_messages_eus.dir/build
 .PHONY : gazebo_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -1394,12 +1394,12 @@ geometry_msgs_generate_messages_nodejs: my_spherical_manipulator/CMakeFiles/geom
 
 # fast build rule for target.
 geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -1409,12 +1409,12 @@ dynamic_reconfigure_generate_messages_eus: my_spherical_manipulator/CMakeFiles/d
 
 # fast build rule for target.
 dynamic_reconfigure_generate_messages_eus/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_generate_messages_eus.dir/build
 .PHONY : dynamic_reconfigure_generate_messages_eus/fast
 
 # Convenience name for target.
 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 .PHONY : my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/rule
 
 # Convenience name for target.
@@ -1424,7 +1424,7 @@ dynamic_reconfigure_gencfg: my_spherical_manipulator/CMakeFiles/dynamic_reconfig
 
 # fast build rule for target.
 dynamic_reconfigure_gencfg/fast:
-	cd /home/eng401/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(MAKE) -f my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/build.make my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/build
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Help Target
@@ -1535,6 +1535,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/eng401/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

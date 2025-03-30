@@ -1,14 +1,21 @@
-base_Revolute_1_controller:
-  type: "effort_controllers/JointEffortController"
-  joint: "base_Revolute_1"
-  pid: {p: 10.0, i: 0.1, d: 0.01}
+gazebo_ros_control:
+  pid_gains:
+    base_Revolute_1:
+      p: 10
+      d: 1
+      i: 1
+    
+    large_Revolute_2:
+      p: 10
+      d: 1
+      i: 1
+    
+    medium_Revolute_3:
+      p: 10
+      d: 1
+      i: 1
+      
 
-large_Revolute_2_controller:
-  type: "position_controllers/JointPositionController"
-  joint: "large_Revolute_2"
-  pid: {p: 20.0, i: 0.1, d: 0.01}
-
-medium_Revolute_3_controller:
-  type: "velocity_controllers/JointVelocityController"
-  joint: "medium_Revolute_3"
-  pid: {p: 15.0, i: 0.1, d: 0.01}
+joint_state_controller:
+  type: "joint_state_controller/JointStateController"
+  publish_rate: 50

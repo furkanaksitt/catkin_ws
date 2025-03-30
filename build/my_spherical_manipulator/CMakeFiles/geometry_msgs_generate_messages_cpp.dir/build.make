@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eng401/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/ros-linux/ros-projects/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eng401/catkin_ws/build
+CMAKE_BINARY_DIR = /home/ros-linux/ros-projects/catkin_ws/build
 
 # Utility rule file for geometry_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/buil
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
 
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean:
-	cd /home/eng401/catkin_ws/build/my_spherical_manipulator && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/clean
 
 my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend:
-	cd /home/eng401/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eng401/catkin_ws/src /home/eng401/catkin_ws/src/my_spherical_manipulator /home/eng401/catkin_ws/build /home/eng401/catkin_ws/build/my_spherical_manipulator /home/eng401/catkin_ws/build/my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros-linux/ros-projects/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros-linux/ros-projects/catkin_ws/src /home/ros-linux/ros-projects/catkin_ws/src/my_spherical_manipulator /home/ros-linux/ros-projects/catkin_ws/build /home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator /home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_spherical_manipulator/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/depend
 
