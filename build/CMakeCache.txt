@@ -15,10 +15,10 @@
 ########################
 
 //Value Computed by CMake
-Assem1_BINARY_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/build/Assem1
+Assem1_BINARY_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm
 
 //Value Computed by CMake
-Assem1_SOURCE_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/src/Assem1
+Assem1_SOURCE_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm
 
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON

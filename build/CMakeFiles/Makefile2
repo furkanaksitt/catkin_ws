@@ -55,7 +55,7 @@ CMAKE_BINARY_DIR = /home/ros-linux/ros-projects/catkin_ws/build
 # The main recursive "all" target.
 all: gtest/all
 all: mover/all
-all: Assem1/all
+all: spherical_arm/all
 all: my_spherical_manipulator/all
 
 .PHONY : all
@@ -63,7 +63,7 @@ all: my_spherical_manipulator/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: mover/preinstall
-preinstall: Assem1/preinstall
+preinstall: spherical_arm/preinstall
 preinstall: my_spherical_manipulator/preinstall
 
 .PHONY : preinstall
@@ -76,28 +76,10 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: mover/clean
-clean: Assem1/clean
+clean: spherical_arm/clean
 clean: my_spherical_manipulator/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory Assem1
-
-# Recursive "all" directory target.
-Assem1/all:
-
-.PHONY : Assem1/all
-
-# Recursive "preinstall" directory target.
-Assem1/preinstall:
-
-.PHONY : Assem1/preinstall
-
-# Recursive "clean" directory target.
-Assem1/clean:
-
-.PHONY : Assem1/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
@@ -274,6 +256,24 @@ my_spherical_manipulator/clean: my_spherical_manipulator/CMakeFiles/dynamic_reco
 my_spherical_manipulator/clean: my_spherical_manipulator/CMakeFiles/dynamic_reconfigure_gencfg.dir/clean
 
 .PHONY : my_spherical_manipulator/clean
+
+#=============================================================================
+# Directory level rules for directory spherical_arm
+
+# Recursive "all" directory target.
+spherical_arm/all:
+
+.PHONY : spherical_arm/all
+
+# Recursive "preinstall" directory target.
+spherical_arm/preinstall:
+
+.PHONY : spherical_arm/preinstall
+
+# Recursive "clean" directory target.
+spherical_arm/clean:
+
+.PHONY : spherical_arm/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir

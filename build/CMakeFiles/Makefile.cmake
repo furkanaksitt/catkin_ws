@@ -7,7 +7,6 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "Assem1/catkin_generated/package.cmake"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -17,13 +16,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "mover/catkin_generated/package.cmake"
   "my_spherical_manipulator/catkin_generated/ordered_paths.cmake"
   "my_spherical_manipulator/catkin_generated/package.cmake"
-  "/home/ros-linux/ros-projects/catkin_ws/src/Assem1/CMakeLists.txt"
-  "/home/ros-linux/ros-projects/catkin_ws/src/Assem1/package.xml"
+  "spherical_arm/catkin_generated/package.cmake"
   "/home/ros-linux/ros-projects/catkin_ws/src/CMakeLists.txt"
   "/home/ros-linux/ros-projects/catkin_ws/src/mover/CMakeLists.txt"
   "/home/ros-linux/ros-projects/catkin_ws/src/mover/package.xml"
   "/home/ros-linux/ros-projects/catkin_ws/src/my_spherical_manipulator/CMakeLists.txt"
   "/home/ros-linux/ros-projects/catkin_ws/src/my_spherical_manipulator/package.xml"
+  "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/CMakeLists.txt"
+  "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/package.xml"
   "/opt/ros/noetic/share/actionlib/cmake/actionlib-msg-extras.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig-version.cmake"
   "/opt/ros/noetic/share/actionlib/cmake/actionlibConfig.cmake"
@@ -294,7 +294,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "mover/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Assem1/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "spherical_arm/CMakeFiles/CMakeDirectoryInformation.cmake"
   "my_spherical_manipulator/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

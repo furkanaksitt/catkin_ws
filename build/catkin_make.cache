@@ -1,2 +1,2 @@
-Assem1:mover:my_spherical_manipulator
+mover:my_spherical_manipulator:spherical_arm
 -DCATKIN_DEVEL_PREFIX=/home/ros-linux/ros-projects/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ros-linux/ros-projects/catkin_ws/install -G Unix Makefiles
