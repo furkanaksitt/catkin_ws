@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ros-linux/ros-projects/catkin_ws/build/gtest/cmake_install.cmake")
   include("/home/ros-linux/ros-projects/catkin_ws/build/mover/cmake_install.cmake")
+  include("/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/cmake_install.cmake")
   include("/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/cmake_install.cmake")
   include("/home/ros-linux/ros-projects/catkin_ws/build/my_spherical_manipulator/cmake_install.cmake")
 

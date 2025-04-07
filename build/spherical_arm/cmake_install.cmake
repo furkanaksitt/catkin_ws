@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/catkin_generated/installspace/Assem1.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/catkin_generated/installspace/spherical_arm.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Assem1/cmake" TYPE FILE FILES
-    "/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/catkin_generated/installspace/Assem1Config.cmake"
-    "/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/catkin_generated/installspace/Assem1Config-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spherical_arm/cmake" TYPE FILE FILES
+    "/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/catkin_generated/installspace/spherical_armConfig.cmake"
+    "/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/catkin_generated/installspace/spherical_armConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Assem1" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spherical_arm" TYPE FILE FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Assem1/config" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spherical_arm/config" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/config/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Assem1/launch" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/launch/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spherical_arm/launch" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Assem1/meshes" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/meshes/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spherical_arm/meshes" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/meshes/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Assem1/urdf" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/urdf/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/spherical_arm/urdf" TYPE DIRECTORY FILES "/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm/urdf/")
 endif()
 

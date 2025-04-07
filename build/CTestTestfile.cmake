@@ -6,5 +6,6 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("mover")
+subdirs("arm_spherical")
 subdirs("spherical_arm")
 subdirs("my_spherical_manipulator")

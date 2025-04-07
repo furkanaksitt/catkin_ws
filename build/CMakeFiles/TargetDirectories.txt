@@ -43,6 +43,13 @@
 /home/ros-linux/ros-projects/catkin_ws/build/mover/CMakeFiles/edit_cache.dir
 /home/ros-linux/ros-projects/catkin_ws/build/mover/CMakeFiles/test.dir
 /home/ros-linux/ros-projects/catkin_ws/build/mover/CMakeFiles/_catkin_empty_exported_target.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/install/strip.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/install/local.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/install.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/list_install_components.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/rebuild_cache.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/edit_cache.dir
+/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical/CMakeFiles/test.dir
 /home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/CMakeFiles/install/strip.dir
 /home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/CMakeFiles/install/local.dir
 /home/ros-linux/ros-projects/catkin_ws/build/spherical_arm/CMakeFiles/install.dir

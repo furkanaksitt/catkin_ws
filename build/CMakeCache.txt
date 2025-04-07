@@ -15,10 +15,10 @@
 ########################
 
 //Value Computed by CMake
-Assem1_BINARY_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm
+Assem1_BINARY_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/build/Assem1
 
 //Value Computed by CMake
-Assem1_SOURCE_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm
+Assem1_SOURCE_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/src/Assem1
 
 //Builds the googlemock subproject
 BUILD_GMOCK:BOOL=ON
@@ -406,6 +406,12 @@ actionlib_DIR:PATH=/opt/ros/noetic/share/actionlib/cmake
 //The directory containing a CMake configuration file for actionlib_msgs.
 actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
 
+//Value Computed by CMake
+arm_spherical_BINARY_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/build/arm_spherical
+
+//Value Computed by CMake
+arm_spherical_SOURCE_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/src/arm_spherical
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
@@ -586,6 +592,12 @@ rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for sensor_msgs.
 sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
+
+//Value Computed by CMake
+spherical_arm_BINARY_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/build/spherical_arm
+
+//Value Computed by CMake
+spherical_arm_SOURCE_DIR:STATIC=/home/ros-linux/ros-projects/catkin_ws/src/spherical_arm
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
@@ -768,7 +780,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
