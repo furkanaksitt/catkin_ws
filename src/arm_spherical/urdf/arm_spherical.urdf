@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
+<!-- Robot model declaration -->
+<robot
+  name="arm_spherical">
+
+<!-- ==================== -->
+<!-- MATERIAL DEFINITIONS -->
+<!-- ==================== -->
+<material name="dark_grey">
+  <color rgba="0.3 0.3 0.3 1" />
+</material>
+
+<material name="white">
+  <color rgba="1 1 1 1" />
+</material>
+
+<material name="neon_orange">
+  <color rgba="1 0.5 0 1" />
+</material>
+
+<material name="black">
+  <color rgba="0 0 0 1" />
+</material>
+
+<material name="brown">
+  <color rgba="0.6 0.3 0.1 1" />
+</material>
+
+<!-- ==================== -->
+<!-- TABLE STRUCTURE      -->
+<!-- ==================== -->
+<!-- Table Legs -->
+<link name="Leg1">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="500" />
+    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+  </inertial>
+  <visual>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+    <material name="dark_grey" />
+  </visual>
+  <collision>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="Leg2">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="500" />
+    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+  </inertial>
+  <visual>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+    <material name="dark_grey" />
+  </visual>
+  <collision>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="Leg3">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="500" />
+    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+  </inertial>
+  <visual>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+    <material name="dark_grey" />
+  </visual>
+  <collision>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+  </collision>
+</link>
+
+<link name="Leg4">
+  <inertial>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <mass value="500" />
+    <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01" />
+  </inertial>
+  <visual>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+    <material name="black" />
+  </visual>
+  <collision>
+    <origin xyz="0 0 -0.25" rpy="0 0 0" />
+    <geometry>
+      <cylinder radius="0.05" length="0.5" />
+    </geometry>
+  </collision>
+</link>
+
+<!-- Table Leg Joints -->
+<joint name="Table_to_Leg1" type="fixed">
+  <origin xyz="0.45 0.95 -0.025" rpy="0 0 0" />
+  <parent link="Table" />
+  <child link="Leg1" />
+</joint>
+
+<joint name="Table_to_Leg2" type="fixed">
+  <origin xyz="-0.45 0.95 -0.025" rpy="0 0 0" />
+  <parent link="Table" />
+  <child link="Leg2" />
+</joint>
+
+<joint name="Table_to_Leg3" type="fixed">
+  <origin xyz="0.45 -0.95 -0.025" rpy="0 0 0" />
+  <parent link="Table" />
+  <child link="Leg3" />
+</joint>
+
+<joint name="Table_to_Leg4" type="fixed">
+  <origin xyz="-0.45 -0.95 -0.025" rpy="0 0 0" />
+  <parent link="Table" />
+  <child link="Leg4" />
+</joint>
+
+<!-- Table Surface -->
+<link name="Table">
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <box size="1 2 0.05" />
+    </geometry>
+    <material name="dark_grey"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <box size="0.5 0.5 0.05" />
+    </geometry>
+  </collision>
+</link>
+
+<!-- Table-Clamp Connection (reversed) -->
+<joint name="Table_to_Clamp" type="fixed">
+  <origin xyz="0.5 0.3 -0.01" rpy="0 0 0" />
+  <parent link="Table" />
+  <child link="Clamp" />
+</joint>
+
+
+<!-- ==================== -->
+<!-- ROBOT BASE STRUCTURE -->
+<!-- ==================== -->
+  
+  <!-- Base link (Clamp) with inertial, visual and collision properties -->
+  <link
+    name="Clamp">
+    <inertial>
+      <origin
+        xyz="-0.0233258079752198 -0.0189733048148376 0.120959528638574"
+        rpy="0 0 0" />
+      <mass
+        value="0.460494456300938" />
+      <inertia
+        ixx="0.000882508213865086"
+        ixy="-2.59122688089503E-05"
+        ixz="2.1696681697268E-08"
+        iyy="0.000491167484016736"
+        iyz="3.80444687674658E-08"
+        izz="0.000906035971393882" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Clamp.STL" />
+      </geometry>
+      <material name="neon_orange"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Clamp.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Base bottom link with inertial, visual and collision properties -->
+  <link
+    name="BaseBottom">
+    <inertial>
+      <origin
+        xyz="0.0275161601893971 0.0146166513581867 -5.39317474984591E-08"
+        rpy="1.5708 0 0" />
+      <mass
+        value="0.10484945725473" />
+      <inertia
+        ixx="7.2709906267008E-05"
+        ixy="-1.75624126571964E-05"
+        ixz="3.36090561898083E-12"
+        iyy="0.000110167023327002"
+        iyz="-4.00916785166116E-11"
+        izz="7.6148394145867E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/BaseBottom.STL" />
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5708 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/BaseBottom.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Fixed joint connecting Clamp to BaseBottom -->
+  <joint
+    name="BaseCoincident"
+    type="fixed">
+    <origin
+      xyz="-0.042533 -0.12096 0.069938"
+      rpy="0 0 0" />
+    <parent
+      link="Clamp" />
+    <child
+      link="BaseBottom" />
+  </joint>
+  
+  <!-- Base top link with inertial, visual and collision properties -->
+  <link
+    name="Basetop">
+    <inertial>
+      <origin
+        xyz="0.0177442759556105 0.0502156701824598 5.59712730607842E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.0616862169128715" />
+      <inertia
+        ixx="3.32770325911918E-05"
+        ixy="3.13233432088646E-06"
+        ixz="6.41709719283794E-11"
+        iyy="6.5760819704772E-05"
+        iyz="5.39655506606401E-12"
+        izz="3.59717393927469E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Basetop.STL" />
+      </geometry>
+      <material name="dark_grey"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Basetop.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Fixed joint connecting BaseBottom to Basetop -->
+  <joint
+    name="Basetop_coincident"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="BaseBottom" />
+    <child
+      link="Basetop" />
+  </joint>
+  
+  <!-- First arm link with inertial, visual and collision properties -->
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="-0.073231724293926 -0.174495682559919 0.0157674561080342"
+        rpy="0 0 0" />
+      <mass
+        value="0.134387451123297" />
+      <inertia
+        ixx="7.1758516138625E-05"
+        ixy="0.000116929954535354"
+        ixz="3.81941128933395E-07"
+        iyy="0.000341666804259734"
+        iyz="8.02702342060214E-07"
+        izz="0.00038896653307721" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Link1.STL" />
+      </geometry>
+<material name="white"/>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Fixed joint connecting Basetop to Link1 -->
+  <joint
+    name="Base_Revolute"
+    type="revolute">
+    <origin
+      xyz="-0.010096 0.0608 0"
+      rpy="0 1.5708 1.5708" />
+    <parent
+      link="Basetop" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="1.0" />
+      <dynamics damping="5.0" friction="1.0" />
+  </joint>
+  
+  <!-- Second arm link with inertial, visual and collision properties -->
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="-0.139451292762809 -0.0329510200015893 0.000277091219948775"
+        rpy="0 0 0" />
+      <mass
+        value="0.141255683111516" />
+      <inertia
+        ixx="0.000227868250967347"
+        ixy="8.7680483880456E-05"
+        ixz="1.32043697759105E-07"
+        iyy="0.000101148176225664"
+        iyz="8.58998343331658E-07"
+        izz="0.000305019266512094" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://arm_spherical/meshes/Link2.STL" />
+      </geometry>
+      <material name="white" />
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Revolute joint connecting Link1 to Link2 -->
+  <joint
+    name="Revolute_2"
+    type="revolute">
+    <origin
+      xyz="0 0.1150 0.060"
+      rpy="0.7708 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 -0.70711" />
+    <limit
+      lower="-1.57"
+      upper="1.57"
+      effort="100"
+      velocity="1.0" />
+      <dynamics damping="5.0" friction="1.0" />
+  </joint>
+  
+  <!-- Third arm link with inertial, visual and collision properties -->
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="-0.148190265926897 -0.041217213228108 1.82467526561869E-06"
+        rpy="0 0 0" />
+      <mass
+        value="0.143472691808633" />
+      <inertia
+        ixx="0.000227308574163085"
+        ixy="9.66722469399881E-05"
+        ixz="3.60638195162956E-09"
+        iyy="0.000154051419490628"
+        iyz="-3.4644084442219E-09"
+        izz="0.000360596535382784" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://arm_spherical/meshes/Link3.STL" />
+      </geometry>
+      <material name="white" />
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://arm_spherical/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <!-- Revolute joint connecting Link2 to Link3 -->
+  <joint
+    name="Revolute3"
+    type="revolute">
+    <origin
+      xyz="0 0.113917 0.0475"
+      rpy="0.7708 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 -0.70711" />
+    <limit
+      lower="-2.35"
+      upper="2.35"
+      effort="100"
+      velocity="1.0" />
+      <dynamics damping="5.0" friction="1.0" />
+  </joint>
+  
+    <!-- ==================== -->
+  <!-- GAZEBO MATERIALS     -->
+  <!-- ==================== -->
+  <!-- Table Legs -->
+  <gazebo reference="Leg1">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <gazebo reference="Leg2">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <gazebo reference="Leg3">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <gazebo reference="Leg4">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <!-- Table -->
+  <gazebo reference="Table">
+    <material>Gazebo/White</material>
+  </gazebo>
+  
+  <!-- Base Components -->
+  <gazebo reference="Clamp">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+  
+  <gazebo reference="BaseBottom">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+  
+  <gazebo reference="Basetop">
+    <material>Gazebo/Orange</material>
+  </gazebo>
+  
+  <!-- Robot Arm Links -->
+  <gazebo reference="Link1">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  
+  <gazebo reference="Link2">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  
+  <gazebo reference="Link3">
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+  <!-- Gazebo-specific joint properties -->
+  <gazebo reference="Base_Revolute">
+    <implicitSpringDamper>1</implicitSpringDamper>
+    <provideFeedback>true</provideFeedback>
+  </gazebo>
+  
+  <gazebo reference="Revolute_2">
+    <implicitSpringDamper>1</implicitSpringDamper>
+    <provideFeedback>true</provideFeedback>
+  </gazebo>
+  
+  <gazebo reference="Revolute3">
+    <implicitSpringDamper>1</implicitSpringDamper>
+    <provideFeedback>true</provideFeedback>
+  </gazebo>
+</robot>
